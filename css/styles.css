@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* 
+font-family: 'Roboto condensed'
+font-family: 'Rubik'
+*/
+
 /* ------ Général ------ */
 
 *{box-sizing: border-box;}
@@ -11,13 +19,11 @@
 /* ------ Header ------ */
 
 header{
-	padding: 20px 0;
 	background-color: #803504;
 }
 .flex-cotes{
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
 }
 
 .logo img{
@@ -51,10 +57,21 @@ body {
 	background-color: #f1efdc;
 	color: #333;
 	line-height: 1.4;
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.3rem;
-
+	font-family: "Rubik", serif;
 }
+
+p{
+	color: #333;
+	font-family: "Roboto Condensed", serif;
+	font-size: 1.2rem;
+}
+.p-prix{
+	color: #333;
+	font-family: "Roboto Condensed", serif;
+	font-size: 2.3rem;
+}
+	
 
 a {
 	color: rgb(252, 252, 253);
@@ -69,25 +86,45 @@ a:hover {
 h2{
 	font-size: 2.5rem;
 }
-h2, h3{
-	margin-top: 0;
+h1:hover {
+	background-color: none;
 }
 
-.btn {
-	display: inline-block;
-	background-color: #d5c009;
-	border-radius: 4px;
-	padding: 0.6em 2em;
-	color: #fff;
-	transition: background-color 0.3s;
-	margin: 1rem 0;
-	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.6);
-}
+
+.bouton{
+	font-family: "Rubik", serif;
+	background-color: #3b3937;
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+  }
+
 .btn:hover{
 	background-color: #af9d00;
 	color:  rgb(253, 255, 223);
 	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.9);
 }
+
+.carte{
+	padding: 1px;
+	text-align: center;
+	margin-bottom: 25px;
+	background-color: #f2f5e9;
+}
+
+.space-adresse{
+	display:flex;
+	justify-content: space-between;
+  }
+.adresse-txt-bold{
+	color: rgb(255, 255, 255);
+	font-size: 1.5rem;
+	font-weight: 400;
+
+  }
+  .background-adresse{
+	background-color:#040c55;
+  }
 
 /* Positionnement */
 
@@ -104,7 +141,36 @@ h2, h3{
 	gap: 30px;
 }
 
+.flex-colonnes{
+	display: flex;
+	justify-content: space-between;
+}
+.flex-center{
+	display:flex;
+	justify-content: center;
+}
 
+.float-right{
+	float: right;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	width: 400px;
+  }
+
+
+/* ------ Footer ------ */
+
+.space-footer{
+	display:flex;
+	justify-content: space-between;
+  }
+  .texte-footer{
+	color: rgb(3, 3, 3);
+	font-size: 1rem;
+  }
+  .background-footer{
+	background-color:#f1efec;
+  }
 
 
 

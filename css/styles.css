@@ -1,11 +1,54 @@
-* {
-	box-sizing: border-box;
+/* ------ Général ------ */
+
+*{box-sizing: border-box;}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
 }
+
+/* ------ Header ------ */
+
+header{
+	padding: 20px 0;
+	background-color: #803504;
+}
+.flex-cotes{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.logo img{
+	border-radius: 15%;
+	max-width: 100%;
+}
+
+nav ul{padding: 0;}
+
+nav li{display: inline-block;}
+
+nav a{
+	display: inline-block;
+	padding: 5px 20px;
+	text-decoration: none;
+}
+
+.actuel{
+	border: 1px solid;
+}
+a:hover{
+	background-color: #fdb817;
+}
+
+
+
 
 /* Typographie */
 
 body {
-	background-color: rgb(6, 5, 63);
+	background-color: #f1efdc;
 	color: #333;
 	line-height: 1.4;
 	font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +57,7 @@ body {
 }
 
 a {
-	color: rgb(108, 118, 204);
+	color: rgb(252, 252, 253);
 	text-decoration: none;
 }
 
@@ -48,15 +91,6 @@ h2, h3{
 
 /* Positionnement */
 
-.container {
-	max-width: 1200px;
-	width: 90%;
-	margin: 0 auto;
-}
-
-img {
-	max-width: 100%;
-}
 
 .flex-between{
 	display: flex;
@@ -70,45 +104,8 @@ img {
 	gap: 30px;
 }
 
-/* header / footer / main */
-
-header{
-	text-align: center;
-	padding: 40px 0;
-	background-color: #fff;
-}
-
-footer
-{
-	text-align: center;
-	background-color: #fff;
-	padding: 1rem;
-}
-
-main{
-	padding: 40px 0;
-}
 
 
-/* Composantes */
-
-.boite {
-	text-align: center;
-	padding: 40px;
-	background-color: #fff;
-	border: 2px solid rgb(124, 127, 213);
-}
-.boite img {width: 50%;}
-
-.message{
-	padding: 60px 0;
-	color: #fff;
-}
-.message h3 {font-size: 3.5rem;}
-.message img,
-.message div{
-	width: 35%;
-}
 
 
 /* ------------- */

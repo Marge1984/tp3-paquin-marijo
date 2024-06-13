@@ -120,11 +120,16 @@ h1:hover {
 	color: rgb(255, 255, 255);
 	font-size: 1.5rem;
 	font-weight: 400;
-
   }
   .background-adresse{
 	background-color:#040c55;
   }
+
+  .img-size{
+	width: 50%;
+  }
+
+
 
 /* Positionnement */
 
@@ -156,6 +161,76 @@ h1:hover {
 	margin-bottom: 20px;
 	width: 400px;
   }
+
+  /* ------ Formulaire ------ */
+
+  .marg-bot{
+	margin-bottom: 30px;
+}
+
+.txt-right{
+	text-align: right;
+}
+
+.flex-btw{
+	display: flex;
+	justify-content: space-between;
+}
+
+.width50{
+	width: 48%;
+}
+
+form{
+	font-size: 1.3rem;
+	/* max-width: 475px; */
+}
+
+label{
+	display: inline-block;
+	margin: 0 15px 10px 0;
+}
+
+input, select{
+	border-radius: 3px;
+	border:1px solid #9c9c9c;
+	padding: 10px 15px;
+	font-size: 1rem;
+}
+input[type='radio'], 
+input[type='checkbox']{
+	transform: scale(1.3);
+	margin: 0 5px;
+}
+.champs-large{
+	display: block;
+	width: 100%;
+}
+
+.champs-etroit{
+	display: block;
+	max-width: 100px;
+}
+
+fieldset{
+	margin-bottom: 30px;
+	padding: 20px;
+	border: 1px solid #c2c2c2;
+}
+fieldset legend{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+fieldset fieldset{
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+fieldset fieldset legend{
+	font-size: 1.3rem;
+	font-weight: 400;
+	margin-bottom: 8px;
+}
 
 
 /* ------ Footer ------ */

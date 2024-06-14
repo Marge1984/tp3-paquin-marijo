@@ -9,7 +9,7 @@
 	<meta name="description" content="Page Ma commande du site Burger Shop">
 
 	<!-- Balise meta à utiliser pour gérer l'affichage sur les appareils mobile, tablette, etc. -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/styles.css" />
@@ -25,11 +25,74 @@
 			</h1>
 			<nav>
 				<ul>
-					<li><a class="nav-couleur" href="accueil.html">Menu</a></li>
-					<li><a class="nav-couleur" href="reservation.html">Réservation</a></li>
-					<li><a class="nav-couleur" href="restaurant.html">Restaurant</a></li>
-					<li><a class="nav-couleur actuel" href="ma-commande.html">Ma commande</a></li>
+					<li><a href="accueil.html">Menu</a></li>
+					<li><a href="reservation.html">Réservation</a></li>
+					<li><a href="restaurant.html">Restaurant</a></li>
+					<li><a class="actuel btn-commande" href="ma-commande.html">Ma commande</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+
+	<div class="container flex-col-commande">
+		<main class="col-2-tiers">
+			<h2>Ma commande</h2>
+			<div class="flex-col-arrow">
+				<img src="img/right.png" alt="Flèche droite">
+			</div>
+					<dl>
+						<dd>Burger</dd>
+						<dd>Le Commodo  |  9,99$</dd>
+						<dd>Le Lorem  |  12,99$</dd>
+					</dl>
+					<div>
+						<img src="img/right.png" alt="Flèche droite">
+					</div>
+						<dl>
+							<dd>Beignes</dd>
+							<dd>Le Etiam  |  3,99$</dd>
+							<dd>Le Maximus  |  2,99$</dd>
+						</dl>
+						<div>
+							<dl>
+								<dd>Quantité : 1</dd>
+								<dd>Quantité : 1</dd>
+								<dd>Quantité : 1</dd>
+								<dd>Quantité : 1</dd>
+							</dl>
+						</div>
+			</div>
+		</main>
+	</div>
+
+	<aside class="col-1-tiers">
+	</aside>
+
+	<section id="section-2">
+		<div class="container">
+			<img class="float-right img-size" src="img/t-shirt.png" alt="t-shirt burger shop">
+			<h2>LE T-SHIRT BURGER SHOP</h2>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae numquam quisquam quod eum id nam commodi
+				dolorem iure in. Sapiente laudantium aut explicabo obcaecati laborum perspiciatis delectus fugit sunt
+				pariaturLorem ipsum dolor sit amet consectetur, adipisicing elit. Quae numquam quisquam quod eum id nam commodi
+				dolorem iure in</p>
+				<a class="bouton" href="#">Ajouter au panier</a>
+		</div>
+	</section>
+
+		<section class="background-adresse">
+			<div class="container space-adresse">
+				<p class="adresse-txt"><strong>Burger Shop : </strong>Boul. Laviolette, Trois-Rivières, Qc</p><p class="telephone-txt">418-123-4567</p>
+			</div>
+		</section>
+
+	<footer class="background-footer">
+		<div class="space-footer container">
+			<p class="texte-footer">Site intégré par <strong>Marijo Paquin</strong></p><p class="texte-footer"> Dans le cadre du cours Techniques d'intégration des interfaces Web - Cégep de Trois-Rivières</p>
+		</div>
+	</footer>
+
+</body>
+</html>
+
+

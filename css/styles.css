@@ -123,6 +123,12 @@ h1:hover {
 	display:flex;
 	justify-content: space-between;
   }
+
+  .space-commande{
+	display:flex;
+	justify-content: space-between;
+	text-decoration-line: underline;
+  }
 .adresse-txt{
 	color: rgb(255, 255, 255);
 	font-size: 1.5rem;
@@ -174,13 +180,12 @@ h1:hover {
 	justify-content: space-between;
 }
 
-.flex-col-arrow{
-	display: flex;
-	justify-content: flex-start;
-}
-
 .col-2-tiers{width: 65.5%;}
-.col-1-tiers{width: 32.5%;}
+.col-1-tiers{
+	width: 28%;
+	padding: 10px;
+	background-color: #fdb817;
+}
 
 .flex-center{
 	display:flex;
@@ -211,6 +216,9 @@ h1:hover {
 
 .width50{
 	width: 48%;
+}
+.width5{
+	width: 5%;
 }
 
 form{
@@ -270,9 +278,14 @@ fieldset fieldset legend{
 	list-style-type: none;
   }
 
+img{
+  width: 100%;
+}
+
   .grid-mosaique{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+
   }
 
   #mosaique-1{
@@ -331,7 +344,7 @@ fieldset fieldset legend{
 	display: none !important;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
 	nav a{
 		display: none;
 	}
@@ -351,7 +364,7 @@ fieldset fieldset legend{
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 960px) {
 	.hide-on-mobile{
 		display: none !important;
 	}

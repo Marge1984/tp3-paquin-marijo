@@ -68,6 +68,13 @@ body {
 	font-family: "Rubik", serif;
 }
 
+.titre-commande {
+	color: #333;
+	font-size: 2rem;
+	font-family: "Rubik", serif;
+	font-weight: 600;
+}
+
 p{
 	color: #333;
 	font-family: "Roboto Condensed", serif;
@@ -97,6 +104,10 @@ h1:hover {
 	background-color: none;
 }
 
+.txt-bold{
+	font-weight: 400;
+}
+
 
 .bouton{
 	font-family: "Rubik", serif;
@@ -122,6 +133,8 @@ h1:hover {
 .space-adresse{
 	display:flex;
 	justify-content: space-between;
+	align-items: center;
+	padding-right: 20px;
   }
 
   .space-commande{
@@ -146,10 +159,18 @@ h1:hover {
   }
 
   .img-size{
-	width: 200%;
+	width: 100%;
   }
   .margin-t-shirt{
 	margin: 10px 0px 10 px 0 px;
+  }
+
+  dl dd{
+	margin: 0%;
+  }
+
+  .border{
+	border-bottom: 1px #333 solid;
   }
 
 
@@ -172,6 +193,7 @@ h1:hover {
 .flex-colonnes{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .flex-col-commande{
@@ -183,8 +205,9 @@ h1:hover {
 .col-2-tiers{width: 65.5%;}
 .col-1-tiers{
 	width: 28%;
-	padding: 10px;
 	background-color: #fdb817;
+	margin: 40px 10px 200px 0px;
+	padding: 15px;
 }
 
 .flex-center{
@@ -350,21 +373,13 @@ img{
 	}
 }
 
-@media screen and (max-width: 850px) {
-	.grid-colonnes-std{
-		grid-template-columns: 1fr;
-	}
-	.flex-between{
+@media screen and (max-width: 960px) {
+	.flex-col-commande{
 		flex-direction: column;
-	}
-	.message div{
-		width: 100%;
-		text-align: center;
-		margin-bottom: 40px;
 	}
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 570px) {
 	.hide-on-mobile{
 		display: none !important;
 	}
